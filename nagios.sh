@@ -125,7 +125,7 @@ read -p "Ingrese numero de opcion: " OPC
 			;;
 		4)	clear
 		      	systemctl status nagios
-	#		break	
+			break	
 			;;
 		5)      break
 			;;
@@ -173,10 +173,10 @@ read -p "Ingrese numero de opcion: " OPC
 			;;
 		3)      clear
 			ayuda
-	#		break
+			break
 			;;
 		4)	clear
-			/usr/local/nagios/bin/nagios -d /usr/local/nagios/etc/nagios.cfg
+			sudo /usr/local/nagios/bin/nagios -d /usr/local/nagios/etc/nagios.cfg
 	#		break
 			;;
 		5)      clear
