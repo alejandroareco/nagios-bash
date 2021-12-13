@@ -1,0 +1,2 @@
+# update-rc.d -f nagios defaults 99
+# ln -s /etc/init.d/nagios /etc/rcS.d/S99nagios
