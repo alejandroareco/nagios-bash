@@ -64,16 +64,16 @@ read -p "Ingrese numero de opcion: " OPC
 		1)
 			clear
 			install
-			break
+	#		break
 			;;
 		2) 	clear
 			plugins
-			break
+	#		break
 			;;
 		3)	clear
 			plugins
 			install
-			break
+	#		break
 			;;
 		4)      break
 			;;
@@ -113,19 +113,19 @@ read -p "Ingrese numero de opcion: " OPC
 		1)
 			clear
 			adduser
-			break
+	#		break
 			;;
 		2) 	clear
 			sudo chown -R nagios:www-data /usr/local/nagios/var/rw/
-			break
+	#		break
 			;;
 		3)	clear
 			sudo /usr/local/nagios/bin/nagios -v /usr/local/nagios/etc/nagios.cfg
-			break
+	#		break
 			;;
 		4)	clear
 		      	systemctl status nagios
-			break	
+	#		break	
 			;;
 		5)      break
 			;;
@@ -163,20 +163,21 @@ read -p "Ingrese numero de opcion: " OPC
 			uptime
 			sudo /usr/local/nagios/bin/nagios -v /usr/local/nagios/etc/nagios.cfg
 			echo "Se recomiendo ver 'Ayuda (opc 3) antes de ver Nagios UI"
-			break
+	#		break
 			;;
 		2) 	clear
 			dns
 			sudo /usr/local/nagios/bin/nagios -v /usr/local/nagios/etc/nagios.cfg
 			echo "Se recomienda ver 'Ayuda (opc 3) antes de ver Nagios UI"
-			break
+	#		break
 			;;
 		3)      clear
 			ayuda
-			break
+	#		break
 			;;
 		4)	clear
 			/usr/local/nagios/bin/nagios -d /usr/local/nagios/etc/nagios.cfg
+	#		break
 			;;
 		5)      clear
 			break
@@ -194,7 +195,7 @@ source logbkp.sh
 
 if [ "$BACKUP" == "Y" ]; then
 	bkp
-	echo "El backup se encuentra en /home/alejandro/alejandro-areco/trabajos/final"
+	echo "El backup se encuentra en /home/alejandro/final-programacion"
 	echo ""
 	echo "Gracias por utilizar el gestor Nagios"
 else
