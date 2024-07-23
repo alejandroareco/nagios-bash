@@ -1,6 +1,6 @@
 # GESTOR NAGIOS
 
-El gesto de Nagios esta compuesto de 5 estructuras principales:
+El gestor de Nagios esta compuesto de 5 estructuras principales:
 
 - Apache Web Server
 - Nagios Core & plugins
